@@ -3,8 +3,8 @@ name: Publish Docker Images
 on:
   workflow_dispatch: # Manual trigger
   push:
-    # Trigger on master branch only if changes are detected in the docker directory
-    branches: ["master"]
+    # Trigger on main branch only if changes are detected in the docker directory
+    branches: ["main"]
     paths: ["docker/Dockerfile"]
 
 jobs:
